@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ES6",
+        "target": "esnext",
+        "declaration": true,
+        "outDir": "../Javascript/src/",
+        "alwaysStrict": false,
+        "declarationMap": true,
+        "declarationDir": "./src/",
+        "emitBOM": true
+    },
+    "force": true,
+    "exclude": [
+        "../Javascript/src/"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}
