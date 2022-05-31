@@ -6,12 +6,12 @@
         "outDir": "../Javascript/src/",
         "alwaysStrict": false,
         "declarationMap": true,
-        "declarationDir": "./src/",
+        "declarationDir": "../Javascript/@types/",
         "emitBOM": true
     },
     "force": true,
     "exclude": [
-        "../Javascript/src/"
+        "../Javascript/"
     ],
     "include": [
         "src/**/*"
