@@ -6,7 +6,7 @@
         "outDir": "../Javascript/src/",
         "alwaysStrict": false,
         "declarationMap": true,
-        "declarationDir": "../Javascript/@types/",
+        "declarationDir": "./@types/",
         "emitBOM": true
     },
     "force": true,
@@ -14,6 +14,6 @@
         "../Javascript/"
     ],
     "include": [
-        "src/**/*"
+        "src/**/*",
     ]
 }
