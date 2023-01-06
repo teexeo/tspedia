@@ -1,15 +1,21 @@
 /**
  * ```ts
- * $.add({ name: "Adam" }, "age", 20) // { name: "Adam", age: 20 }
+ *add({ name: "Adam" }, "age", 20)
+ // => { name: "Adam", age: 20 }
  *  
- * $.add({ name: "Adam", age: 20 }, "age", 22) // { name: "Adam", age: 22 } 
+ *add({ name: "Adam", age: 20 }, "age", 22) 
+ // => { name: "Adam", age: 22 } 
+ *  
+* add({ name: "Adam", age: 20 }, { age: 20 }) 
+  // => { name: "Adam", age: 20 } 
  * ```
  * @param obj must be a object
- * @param key string | number
+ * @param key string | number | object
  * @param value any
  * @returns object
  * 
  */
+
 
 type keyType = string | number | object;
 
