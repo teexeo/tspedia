@@ -2,14 +2,18 @@
   "name": "tspedia",
   "version": "0.0.42",
   "description": "TypeScript helper functions",
-  "main": "src/index.ts",
-  "types": "@types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SuleymanQ/tspedia.git"
   },
+  "scripts": {
+    "test": "ts-node --esm test.ts"
+  },
   "keywords": [
-    "tspedia", "typescript", "modules", "util"
+    "tspedia",
+    "typescript",
+    "modules",
+    "util"
   ],
   "author": "Suleyman <suleyman91002@gmail.com>",
   "license": "MIT",
@@ -17,6 +21,8 @@
     "url": "https://github.com/SuleymanQ/tspedia/issues"
   },
   "homepage": "https://github.com/SuleymanQ/tspedia#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
   }
 }
