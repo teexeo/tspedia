@@ -11,8 +11,17 @@
  * 
  */
 
-export function add(obj: object | any = {}, key: string | number, value: any) {
-    if(typeof obj !== "object") return false;   
-    obj[key] = value;
+type keyType = string | number | object;
+
+export function add(obj: object = {}, key: keyType, value: any) {
+    if(typeof obj !== "object" || Array.isArray(obj)) return false; 
+    if (typeof key === "object") {
+        return {
+            ...obj,
+            ...key
+        }
+    }
+
+    (obj as any)[key] = value;
     return obj;
 }

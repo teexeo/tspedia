@@ -1,11 +1,6 @@
-import { chunk } from './src/index';
+import { add } from "./src/index";
 
+const obj = { name: "Gotis" };
 
-const arr = [1,2,3,4,5];
-
-console.log(
-    chunk(
-        arr,
-        2
-    )
-)
+console.log("Test 1", add(obj, { age: 20 }, 20));
+console.log("Test 2", add(obj, "job", "programming"));
