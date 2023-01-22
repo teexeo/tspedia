@@ -1,7 +1,8 @@
 {
   "name": "tspedia",
-  "version": "0.0.42",
+  "version": "0.0.42-3",
   "description": "TypeScript helper functions",
+  "types": "./@types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SuleymanQ/tspedia.git"
