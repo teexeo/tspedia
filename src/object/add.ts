@@ -1,3 +1,6 @@
+
+type keyType = string | number | object;
+
 /**
  * ```ts
  * $.add({ name: "Adam" }, "age", 20) // { name: "Adam", age: 20 }
@@ -10,10 +13,6 @@
  * @returns object
  * 
  */
-
-
-type keyType = string | number | object;
-
 export function add(obj: object = {}, key: keyType, value: any) {
     if(typeof obj !== "object" || Array.isArray(obj)) return false; 
     if (typeof key === "object") {

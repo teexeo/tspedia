@@ -1,3 +1,6 @@
+import { capitalize } from "./capitalize";
+import { trim } from "./trim";
+
 /**
  * @name camelCase
  * @param text { string }
@@ -9,8 +12,6 @@
  * ```
  */
 
-import { capitalize } from "./capitalize";
-import { trim } from "./trim";
 
  export function camelCase(text: string): string {
     let splitted = trim(text).split(' ');
