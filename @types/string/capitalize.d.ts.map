@@ -1,1 +1,1 @@
-{"version":3,"file":"capitalize.d.ts","sourceRoot":"","sources":["../../src/string/capitalize.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AACF,wBAAgB,UAAU,CAAE,IAAI,EAAE,MAAM,GAAG,MAAM,CAEjD"}
+{"version":3,"file":"capitalize.d.ts","sourceRoot":"","sources":["../../src/string/capitalize.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,UAAU,CAAC;AAG5C;;;;;;;;;;GAUG;AACH,wBAAgB,UAAU,CACxB,IAAI,EAAE,gBAAgB,EACtB,YAAY,CAAC,EAAE,GAAG,GACjB,MAAM,GAAG,IAAI,CAMf"}

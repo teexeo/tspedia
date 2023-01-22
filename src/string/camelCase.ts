@@ -1,23 +1,30 @@
+import { StringWithFalsey } from "../types";
 import { capitalize } from "./capitalize";
-import { trim } from "./trim";
+import { CheckType } from "./helpers";
 
 /**
  * @name camelCase
  * @param text { string }
  * @example
  * ```js
- * const text = "layout menu index"
- * 
- * camelCase(text) // "LayoutMenuIndex"
+ * const text = "layout menu";
+ *
+ * camelCase(text);
+ * //=> "LayoutMenu"
+ *
+ * camelCase()
+ * //=> null
  * ```
  */
 
+export function camelCase(text: StringWithFalsey, defaultValue?: any) {
+  // Parameter type checks
+  text = CheckType(text);
 
- export function camelCase(text: string): string {
-    let splitted = trim(text).split(' ');
-    let finished = '';
-    for (let t of splitted) {
-        finished += capitalize(t);
-    }
-    return finished;
+  if (!text) return defaultValue ?? null;
+
+  return text
+    .split(" ")
+    .map((T) => capitalize(T))
+    .join("");
 }

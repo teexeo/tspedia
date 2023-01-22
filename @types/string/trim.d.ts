@@ -1,10 +1,10 @@
 /**
  * allows just a string;
  * ```ts
- * const text = "Hi my    name   is Jeny";
- *
- * trim(text) // "Hi my name is Jeny"
+ * const text = " Hi   Jeny ";
+ * trim(text)
+ * // "Hi Jeny"
  * ```
  */
-export declare function trim(text: string): string;
+export declare function trim(text: string): string | null;
 //# sourceMappingURL=trim.d.ts.map
