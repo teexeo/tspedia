@@ -3,7 +3,7 @@
   "version": "0.0.43-1",
   "description": "TypeScript helper functions",
   "types": "./@types/index.d.ts",
-  "main": "./src/index.ts",
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SuleymanQ/tspedia.git"

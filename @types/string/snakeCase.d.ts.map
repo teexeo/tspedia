@@ -1,1 +1,1 @@
-{"version":3,"file":"snakeCase.d.ts","sourceRoot":"","sources":["../../src/string/snakeCase.ts"],"names":[],"mappings":"AAAA;;;;;;;GAOG;AAEF,wBAAgB,SAAS,CAAC,IAAI,EAAE,MAAM,UAEtC"}
+{"version":3,"file":"snakeCase.d.ts","sourceRoot":"","sources":["../../src/string/snakeCase.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,gBAAgB,EAAE,MAAM,UAAU,CAAC;AAE5C;;;;;;;;;;GAUG;AAEH,wBAAgB,SAAS,CAAC,IAAI,EAAE,gBAAgB,EAAE,YAAY,CAAC,EAAE,GAAG,OAMnE"}
