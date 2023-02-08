@@ -16,7 +16,7 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "module": "CommonJS",
     "declaration": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "declarationMap": true,
     "declarationDir": "@types"
   },

@@ -9,6 +9,7 @@ type keyType = string | number | object;
  * @param key string | number | object
  * @param value any
  * @returns object
+ * @since 0.2.3
  *
  */
 export declare function add(obj: object | undefined, key: keyType, value: any): false | object;

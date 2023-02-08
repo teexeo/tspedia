@@ -11,7 +11,8 @@ type keyType = string | number | object;
  * @param key string | number | object
  * @param value any
  * @returns object
- * 
+ * @since 0.2.3
+ *
  */
 export function add(obj: object = {}, key: keyType, value: any) {
     if(typeof obj !== "object" || Array.isArray(obj)) return false; 
