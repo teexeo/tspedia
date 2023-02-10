@@ -7,5 +7,5 @@ export { compact } from './array/compact';
 export { drop } from './array/drop';
 export { dropRight } from './array/dropRight';
 export { fill } from './array/fill';
-export { findIndexWith } from './array/findIndexWith';
+export { findIndexWith } from './array/find';
 //# sourceMappingURL=array.d.ts.map
