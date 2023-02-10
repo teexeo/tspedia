@@ -3,3 +3,4 @@ test.*
 dist
 yarn.lock
 coverage
+@types
