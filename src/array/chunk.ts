@@ -1,4 +1,5 @@
 import { isInt } from "../number/isInt";
+import { accessible } from './accessible';
 /**
  * @example 
  * ```ts
@@ -8,7 +9,9 @@ import { isInt } from "../number/isInt";
  * ```
  */
 
-export function chunk(arr: any[], num: number) {
+export function chunk<T>(arr: T[], num: number): T[][] | null {
+    if (!accessible(arr)) return null;
+
     let chunkLength = arr.length / num;
 
     if (!isInt(chunkLength)) chunkLength++;
