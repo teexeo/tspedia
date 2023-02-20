@@ -6,7 +6,7 @@
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SuleymanQ/tspedia.git"
+    "url": "git+https://github.com/tspedia/tspedia.git"
   },
   "scripts": {
     "test": "vitest",
@@ -16,15 +16,18 @@
   "keywords": [
     "tspedia",
     "typescript",
+    "javascript",
     "modules",
-    "util"
+    "util",
+    "helper",
+    "function"
   ],
   "author": "Suleyman <suleyman91002@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SuleymanQ/tspedia/issues"
+    "url": "https://github.com/tspedia/tspedia/issues"
   },
-  "homepage": "https://github.com/SuleymanQ/tspedia#readme",
+  "homepage": "https://github.com/tspedia/tspedia#readme",
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@vitest/coverage-c8": "^0.27.3",
