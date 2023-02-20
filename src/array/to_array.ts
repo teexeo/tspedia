@@ -1,6 +1,4 @@
-import { last } from "./last";
-import { JsTypes } from "../../@types/general/types";
-import { TsTypes } from "../general";
+import { JsTypes, TsTypes } from "../general";
 
 interface toArrayInterface {
   /**
