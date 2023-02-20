@@ -1,6 +1,6 @@
 {
   "name": "tspedia",
-  "version": "0.0.43-2.4",
+  "version": "0.0.43-2.5",
   "description": "TypeScript helper functions",
   "types": "./@types/index.d.ts",
   "main": "./dist/index.js",
