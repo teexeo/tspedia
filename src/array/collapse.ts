@@ -1,4 +1,4 @@
-import { Types, JsTypes } from "../general/types";
+import { JsTypes } from "../general/types";
 
 export interface ICollapseOptions {
   truthy: boolean;
@@ -25,10 +25,10 @@ export interface ICollapseOptions {
  */
 
 export function collapse(...datas: any[]) {
-  return (type: JsTypes | null = null, is_deep: boolean = true) => {
+  return (type: JsTypes | null = null, is_deep: boolean = true, level: number = 10) => {
     // Result data
     let collapsed: any[] = [];
-    for (let data of is_deep ? datas.flat(10) : datas) {
+    for (let data of is_deep ? datas.flat(level) : datas) {
       if (!type) {
         collapsed.push(data);
         continue;

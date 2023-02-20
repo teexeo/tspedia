@@ -1,5 +1,5 @@
 export * from './collapse';
-export * from './accessible';
+export * from './is_array';
 export * from './difference';
 export * from './differenceA';
 export * from './chunk';
@@ -8,3 +8,4 @@ export * from './drop';
 export * from './dropRight';
 export * from './fill';
 export * from './findIndexWith';
+export * from './join';
