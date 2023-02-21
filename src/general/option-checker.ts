@@ -2,13 +2,13 @@ import { IsArray } from "../array/is_array";
 import { last } from "../array/last";
 
 /**
- * 
+ *
  * @param arr array
  * @param exists must contain options like ['depth', 'falsey']
  * @returns options {depth: 1}
  */
 
-export function option_checker(arr: any[], exists: string[]): boolean | object {
+export function option_checker<T extends any>(arr: any[], exists: string[]) {
   if (
     IsArray(arr) &&
     typeof last(arr) === "object" &&

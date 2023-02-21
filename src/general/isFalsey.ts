@@ -1,3 +1,3 @@
 export function IsFalsey(data: any): boolean {
-  return !data;
+  return typeof data !== 'boolean' && !data;
 }

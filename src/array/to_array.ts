@@ -1,4 +1,6 @@
 import { JsTypes, TsTypes } from "../general";
+import { option_checker } from "../general/option-checker";
+import { withDefaults } from "../general/with_defaults";
 
 interface toArrayInterface {
   /**
@@ -9,9 +11,12 @@ interface toArrayInterface {
   falsey?: boolean;
 }
 
-type toArrayType = <T extends TsTypes, U extends T | unknown>(
-  ...arr: [...T[], U extends T ? T : U extends object ? toArrayInterface : U]
-) => any[];
+type toArrayType = <T extends any, U extends TsTypes>(
+  ...arr: [
+    ...T[],
+    U extends Array<any> ? TsTypes[] : U extends object ? toArrayInterface : U
+  ]
+) => any;
 
 /**
  *
@@ -23,12 +28,18 @@ type toArrayType = <T extends TsTypes, U extends T | unknown>(
  */
 
 export const toArray: toArrayType = (...arr) => {
-  return arr.flat(1);
-  // let options = {
-  //   is_exists: false,
-  // };
-  // if (IsArray(arr)) {
-  //   return;
-  // }
-  // return [];
+  let option: toArrayInterface = option_checker(arr.flat(), [
+    "depth",
+    "falsey",
+  ]);
+
+  let flatted = arr
+    .slice(0, arr.length - 1)
+    .flat(withDefaults(option?.depth, 1));
+
+  if (!withDefaults(option?.falsey, true)) {
+    return flatted.filter((a) => !!a);
+  }
+
+  return flatted;
 };
