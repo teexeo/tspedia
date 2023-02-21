@@ -1,10 +1,11 @@
 /**
- * allows just a string;
+ * @description allows just a string;
  * ```ts
  * const text = " Hi   Jeny ";
  * trim(text)
  * // "Hi Jeny"
  * ```
+ * @since v0.0.12
  */
 
 export function trim(text: string): string | null {
@@ -18,9 +19,5 @@ export function trim(text: string): string | null {
     if (!!t) response += " " + t;
   }
 
-  return text
-    .split(" ")
-    .map((T) => T ?? "")
-    .join(" ")
-    .trim();
+  return response.trim();
 }

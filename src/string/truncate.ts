@@ -1,5 +1,5 @@
 /**
- * Text truncating
+ * @description Text truncating
  * ```ts
  * truncate('Hello world', 5);
  * // "Hello..."
@@ -11,5 +11,6 @@
  */
 
 export function truncate(text: string, length: number) {
-  return text.length > length ? text.slice(0, length - 1) + "..." : text;
+  if (typeof text !== 'string') return null;
+  return text.length > length ? text.slice(0, length) + "..." : text;
 }
