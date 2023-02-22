@@ -1,6 +1,6 @@
 import { IsArray } from "../array/is_array";
 import { IsBoolean } from "../general/is_boolean";
-import { TsTypes } from "../../@types/general/types";
+import { TsTypes } from "../general/types";
 import { IsString } from "../string/is_string";
 import { emptyObject } from "./empty_object";
 
@@ -16,7 +16,7 @@ type resultType = { [x: string]: any };
  *
  * ```ts
  * toPairs([['name', 'John'], ['age', 20]]);
- * // { key: 'value', age: 20 }
+ * // { name: 'John', age: 20 }
  *
  * // Can also white nested object with true parameter
  * toPairs([['e', ['g', 4], true]])
