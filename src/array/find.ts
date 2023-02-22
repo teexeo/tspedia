@@ -13,7 +13,9 @@ type NSB = number | string | boolean;
  * ```
  */
 
-export function findIndexWith(arr: any[], search: NSB, type: string = '') {
+export function find(arr: any[], search: NSB, type: string = '') {
     if (!!type) return arr.findIndex((e) => e[type] === search);
     return arr.findIndex((e) => e === search);
 }
+
+
