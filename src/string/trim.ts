@@ -1,3 +1,5 @@
+import { IsString } from "./is_string";
+import { IsFalsey } from "../general/isFalsey";
 /**
  * @description allows just a string;
  * ```ts
@@ -9,15 +11,13 @@
  */
 
 export function trim(text: string): string | null {
-  if (!text || typeof text != "string") return null;
-
+  if (!IsString(text)) return null;
 
   const splitted = text.split(" ");
 
   let response: string = "";
   for (let t of splitted) {
-    if (!!t) response += " " + t;
+    if (!IsFalsey(t)) response += " " + t;
   }
-
   return response.trim();
 }

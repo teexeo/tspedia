@@ -13,6 +13,6 @@
  *
  */
 
-export function IsArray(arr: any[]): boolean {
+export function IsArray(arr: any): boolean {
   return Array.isArray(arr);
 }

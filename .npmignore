@@ -3,3 +3,6 @@ test.*
 yarn.lock
 coverage
 tests
+src
+.github
+tsconfig.json

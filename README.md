@@ -1,12 +1,10 @@
 ## TypeScript Helper functions
 
 ```ts
+import { camelCase, difference } from "tspedia";
 
-import * as $ from 'tspedia';
+camelCase("hello world"); // 'HelloWorld'
 
-
-$.camelCase('hello world') // 'HelloWorld'
-
-$.difference([1,2,3], [2,3,4]) // [1,4]
-
+difference([1, 2, 3], [2, 3, 4]); // [1,4]
 ```
+
