@@ -10,14 +10,13 @@ export interface ICollapseOptions {
  * collapse([[2]], "Hello", false, [3])()
  * // => [2, "Hello", false, 3]
  *
- * // With Type
+ * // With type
  * collapse([[2]], "Hello", false, [3])("number")
  * // => [2, 3]
  * 
- * // Without deeply
+ * // Without deep
  * collapse([[2]], "Hello", false, [3])("number", false)
  * // => [[[2]], [3]]
- * 
  * ```
  * @since v0.0.42
  * @param array any array
