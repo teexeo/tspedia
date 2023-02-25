@@ -1,5 +1,4 @@
 export * from './collapse';
-export * from './is_array';
 export * from './difference';
 export * from './differenceA';
 export * from './chunk';

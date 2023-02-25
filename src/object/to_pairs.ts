@@ -1,5 +1,5 @@
 import { IsArray } from "../array/is_array";
-import { IsBoolean } from "../general/is_boolean";
+import { IsBoolean } from "../general/isBoolean";
 import { TsTypes } from "../general/types";
 import { IsString } from "../string/is_string";
 import { emptyObject } from "./empty_object";

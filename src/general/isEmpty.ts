@@ -1,13 +1,15 @@
 import { IsArray } from "../array";
 import { IsFalsey } from "./isFalsey";
+import { IsVoid } from "./isVoid";
 /**
  *
  * Checking is value empty.
  *
  * ```ts
- * IsEmpty(true)  //true
- * IsEmpty({a: 42})  //false
- * IsEmpty([5,"fsfs",77])  //false
+ * IsEmpty(false)   //true
+ * IsEmpty(() => '')   //true
+ * IsEmpty([[[{a: 33}]]])   //false
+ * IsEmpty([5,"fsfs",77])   //false
  * ```
  *
  * @param data any
@@ -17,6 +19,18 @@ import { IsFalsey } from "./isFalsey";
 export function IsEmpty(datas: any): boolean {
   if (IsArray(datas)) {
     return datas.flat(10).length <= 0;
+  }
+
+  if (!IsVoid(datas)) {
+    return false;
+  }
+
+  if (datas === 0) {
+    return true;
+  }
+
+  if (typeof datas === "number") {
+    return false;
   }
 
   return (
