@@ -1,4 +1,4 @@
-import { IsArray } from "../array/is_array";
+import { IsArray } from "../array/isArray";
 import { last } from "../array/last";
 
 /**

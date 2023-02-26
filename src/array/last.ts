@@ -1,4 +1,4 @@
-import { IsArray } from "./is_array";
+import { IsArray } from "./isArray";
 
 /**
  * Return last item of arrays;

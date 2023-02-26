@@ -1,4 +1,4 @@
-import { IsArray } from "../array/is_array";
+import { IsArray } from "../array/isArray";
 import { IsBoolean } from "../general/isBoolean";
 import { TsTypes } from "../general/types";
 import { IsString } from "../string/is_string";

@@ -1,4 +1,4 @@
-import { IsObject } from "./is_object";
+import { IsObject } from "./isObject";
 
 /**
  * @description Object checking with key

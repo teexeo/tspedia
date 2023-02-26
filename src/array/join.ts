@@ -1,5 +1,5 @@
 import { IsFalsey } from "../general/isFalsey";
-import { IsArray } from "./is_array";
+import { IsArray } from "./isArray";
 /**
  *
  * @param arr e.g ["a", "b"]

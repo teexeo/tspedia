@@ -1,5 +1,5 @@
 import { isInt } from "../number/isInt";
-import { IsArray } from './is_array';
+import { IsArray } from './isArray';
 /**
  * @example 
  * ```ts
