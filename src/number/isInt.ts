@@ -1,12 +1,9 @@
 
 /**
- * @param val { number }
- * @description its checking number is integer or other number like (float, double);
+ * @description 'its checking is number integer'
  * 
- * `if gives true integer` 
- * ```ts
- * isInt(23.45) // false
- * ```
+ * @param val number 
+ * 
  */
 
  export function isInt(val: number) {

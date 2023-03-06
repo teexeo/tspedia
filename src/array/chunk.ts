@@ -1,6 +1,8 @@
 import { isInt } from "../number/isInt";
 import { IsArray } from './isArray';
 /**
+ * @description 'dividing an array into parts'
+ * 
  * @example 
  * ```ts
  * const arr = [1,2,3,4,5]

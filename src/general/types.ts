@@ -1,3 +1,8 @@
+/**
+ *
+ * @description 'Type list'
+ */
+
 export const Types = [
   "number",
   "string",

@@ -5,6 +5,9 @@ export interface ICollapseOptions {
 }
 
 /**
+ * @description 'showing array with various deep levels'
+ * 
+ * @example
  * ```ts
  * // Without type
  * collapse([[2]], "Hello", false, [3])()

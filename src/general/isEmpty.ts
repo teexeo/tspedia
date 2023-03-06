@@ -3,8 +3,9 @@ import { IsFalsey } from "./isFalsey";
 import { IsVoid } from "./isVoid";
 /**
  *
- * Checking is value empty.
+ * @description 'checking is value empty'
  *
+ * @example
  * ```ts
  * IsEmpty(false)   //true
  * IsEmpty(() => '')   //true

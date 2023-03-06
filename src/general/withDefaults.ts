@@ -1,6 +1,8 @@
 import { IsFalsey } from "./isFalsey";
 
 /**
+ * 
+ * @example
  * ```ts
  * let car = { name: "Bugatti" };
  * withDefaults(car.name, "Audi")

@@ -2,7 +2,7 @@ import { IsArray } from "../array/isArray";
 import { IsBoolean } from "../general/isBoolean";
 import { TsTypes } from "../general/types";
 import { IsString } from "../string/is_string";
-import { emptyObject } from "./empty_object";
+import { emptyObject } from "./emptyObject";
 
 type toPairsType = [
   string | number,

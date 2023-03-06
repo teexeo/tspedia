@@ -1,5 +1,5 @@
 import { JsTypes, TsTypes } from "../general";
-import { option_checker } from "../general/option-checker";
+import { option_checker } from "../general/optionChecker";
 import { withDefaults } from "../general/withDefaults";
 
 interface toArrayInterface {

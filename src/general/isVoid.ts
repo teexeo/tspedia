@@ -1,18 +1,25 @@
+import { IsFunction } from "./isFunction";
+
 /**
  * @description Checking boolean type.
  *
+ * @example
  * ```ts
  * IsVoid(() => 43434)   // false
- * IsVoid(() => '')   // true
+ * IsVoid(() => "")   // false
+ * IsVoid(() => {})   // true
  * ```
  *
  * @param data any type
  * @returns boolean
  */
 
-export function IsVoid(data: Function): boolean {
-  if (data()) {
-    return false;
+
+export function IsVoid(data: any): boolean | null {
+  if (!IsFunction(data)) return null;
+
+  if (data() === undefined) {
+    return true;
   }
-  return true;
+  return false;
 }
