@@ -1,5 +1,5 @@
-import { isInt } from "../number/isInt";
-import { IsArray } from "./isArray";
+import { isInt } from "../number/isInt.mjs";
+import { IsArray } from "./isArray.mjs";
 /**
  * @description 'dividing an array into parts'
  *
@@ -40,4 +40,23 @@ export function chunk<T>(arr: T[], num: number): T[][] | null {
     outChunk.push(inChunk);
   }
   return outChunk;
+}
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  describe("Chunk", () => {
+    it("should return empty array", () => {
+      expect(chunk([], 0)).toEqual([]);
+    });
+
+    it("should return null", () => {
+      expect(chunk(2 as any, 0)).toEqual(null);
+    });
+
+    it("should chunk array", () => {
+      let input = [0, 0, 0, 0, 0];
+      let output = [[0, 0], [0, 0], [0]];
+      expect(chunk(input, 2)).toEqual(output);
+    });
+  });
 }

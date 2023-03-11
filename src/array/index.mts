@@ -1,5 +1,5 @@
-export * from "./collapse";
-export * from "./difference";
+export * from "./collapse.mjs";
+export * from "./difference.mjs";
 export * from "./differenceA";
 export * from "./chunk";
 export * from "./compact";

@@ -1,4 +1,4 @@
-import { JsTypes } from "../general/types";
+import { JsTypes } from "../general/types.mjs";
 
 export interface ICollapseOptions {
   truthy: boolean;
