@@ -1,6 +1,6 @@
-import { StringWithFalsey } from "../types";
-import { capitalize } from "./capitalize";
-import { CheckType } from "./helpers";
+import { StringWithFalsey } from "../types.mjs";
+import { capitalize } from "./capitalize.mjs";
+import { CheckType } from "./helpers.mjs";
 
 /**
  * @name camelCase

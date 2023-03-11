@@ -1,8 +1,8 @@
-import { IsArray } from "../array/isArray";
-import { IsBoolean } from "../general/isBoolean";
-import { TsTypes } from "../general/types";
-import { IsString } from "../string/is_string";
-import { emptyObject } from "./emptyObject";
+import { IsArray } from "../array/isArray.mjs";
+import { IsBoolean } from "../general/isBoolean.mjs";
+import { TsTypes } from "../general/types.mjs";
+import { IsString } from "../string/is_string.mjs";
+import { emptyObject } from "./emptyObject.mjs";
 
 type toPairsType = [
   string | number,

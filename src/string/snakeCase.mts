@@ -1,5 +1,5 @@
-import { CheckType } from "./helpers";
-import { StringWithFalsey } from "../types";
+import { CheckType } from "./helpers.mjs";
+import { StringWithFalsey } from "../types.mjs";
 
 /**
  * @example

@@ -1,4 +1,4 @@
-import { IsArray } from "./isArray";
+import { IsArray } from "./isArray.mjs";
 
 /**
  * @description 'returns last item of array';

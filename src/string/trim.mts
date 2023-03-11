@@ -1,5 +1,5 @@
-import { IsString } from "./is_string";
-import { IsFalsey } from "../general/isFalsey";
+import { IsString } from "./is_string.mjs";
+import { IsFalsey } from "../general/isFalsey.mjs";
 /**
  * @description allows just a string;
  * ```ts

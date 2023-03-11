@@ -1,4 +1,4 @@
-import { IsObject } from "./isObject";
+import { IsObject } from "./isObject.mjs";
 
 /**
  * @description Object checking with key
