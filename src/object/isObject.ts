@@ -1,4 +1,4 @@
-import { IsArray } from "../array/is_array";
+import { IsArray } from "../array/isArray";
 
 /**
  * @description Check the object.

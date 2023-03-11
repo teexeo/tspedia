@@ -1,7 +1,7 @@
-import { IsArray } from "./is_array";
+import { IsArray } from "./isArray";
 
 /**
- * Return last item of arrays;
+ * @description 'returns last item of array';
  *
  * ```ts
  * last([1,2,3])

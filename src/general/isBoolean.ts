@@ -1,6 +1,7 @@
 /**
  * @description Checking boolean type.
  *
+ * @example
  * ```ts
  * IsBoolean("")    // false
  * IsBoolean(!"")  // true

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { capitalize } from "../../src/string/capitalize";
+import { capitalize } from "../../src/string";
 
 describe("Capitalize", function () {
   it("should return null", () => {

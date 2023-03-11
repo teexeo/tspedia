@@ -1,4 +1,4 @@
-import { camelCase } from '../../src/string/camelCase';
+import { camelCase } from '../../src/string';
 import { describe, it, expect } from 'vitest';
 
 describe('Camel case', function () {

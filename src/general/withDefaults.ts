@@ -1,6 +1,9 @@
 import { IsFalsey } from "./isFalsey";
 
 /**
+ * @description putting default value if it hasn't
+ * 
+ * @example
  * ```ts
  * let car = { name: "Bugatti" };
  * withDefaults(car.name, "Audi")
@@ -13,6 +16,6 @@ import { IsFalsey } from "./isFalsey";
  * @param defaultValue any type
  * @returns data or default value
  */
-export function withDefaults(data: any, defaultValue: any) {
+export function withDefaults<T>(data: T, defaultValue: any | T): T {
   return IsFalsey(data) ? defaultValue : data;
 }
