@@ -1,4 +1,4 @@
-import { IsArray } from "../array/isArray";
+import { IsArray } from "../array/isArray.mjs";
 
 /**
  * @description Check the object.

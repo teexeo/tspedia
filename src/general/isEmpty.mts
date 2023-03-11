@@ -1,6 +1,6 @@
-import { IsArray } from "../array";
-import { IsFalsey } from "./isFalsey";
-import { IsVoid } from "./isVoid";
+import { IsArray } from "../array/isArray.mjs";
+import { IsFalsey } from "./isFalsey.mjs";
+import { IsVoid } from "./isVoid.mjs";
 /**
  *
  * @description 'checking is value empty'

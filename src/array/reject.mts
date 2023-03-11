@@ -1,7 +1,7 @@
-import { IsFunction } from "../general/isFunction";
-import { IsObject } from "../object";
-import { IsString } from "../string";
-import { IsArray } from "./isArray";
+import { IsFunction } from "../general/isFunction.mjs";
+import { IsObject } from "../object/isObject.mjs";
+import { IsString } from "../string/is_string.mjs";
+import { IsArray } from "./isArray.mjs";
 
 type FindType<T> =
   | ((data: T) => boolean) // Function

@@ -1,4 +1,4 @@
-import { IsFunction } from "./isFunction";
+import { IsFunction } from "./isFunction.mjs";
 
 /**
  * @description Checking boolean type.

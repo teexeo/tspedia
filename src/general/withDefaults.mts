@@ -1,4 +1,4 @@
-import { IsFalsey } from "./isFalsey";
+import { IsFalsey } from "./isFalsey.mjs";
 
 /**
  * @description putting default value if it hasn't

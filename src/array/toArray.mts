@@ -1,6 +1,6 @@
-import { JsTypes, TsTypes } from "../general";
-import { option_checker } from "../general/optionChecker";
-import { withDefaults } from "../general/withDefaults";
+import { JsTypes, TsTypes } from "../general/types.mjs";
+import { option_checker } from "../general/optionChecker.mjs";
+import { withDefaults } from "../general/withDefaults.mjs";
 
 interface toArrayInterface {
   depth?: number;

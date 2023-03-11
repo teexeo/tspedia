@@ -1,6 +1,6 @@
-import { IsArray } from "../array/isArray";
-import { last } from "../array/last";
-import { IsObject } from "../object";
+import { IsArray } from "../array/isArray.mjs";
+import { last } from "../array/last.mjs";
+import { IsObject } from "../object/isObject.mjs";
 
 /**
  *

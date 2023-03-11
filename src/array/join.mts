@@ -1,5 +1,5 @@
-import { IsFalsey } from "../general/isFalsey";
-import { IsArray } from "./isArray";
+import { IsFalsey } from "../general/isFalsey.mjs";
+import { IsArray } from "./isArray.mjs";
 
 /**
  *

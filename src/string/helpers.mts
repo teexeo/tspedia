@@ -1,4 +1,4 @@
-import { trim } from './trim';
+import { trim } from './trim.mjs';
 
 export function CheckType(text: any): string | null {
   if (!CheckTypeIsString(text) || !trim(text)) return null;

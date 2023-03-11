@@ -1,1 +1,1 @@
-export * from './isInt';
+export * from './isInt.mjs';
