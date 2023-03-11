@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { truncate } from "../../src/string/truncate";
+import { truncate } from "../../src/string";
 
 describe("Truncate", function () {
   it("should return null", () => {

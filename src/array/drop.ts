@@ -4,11 +4,11 @@
  * @param num how many length you want to drop
  * @example
  * ```ts
- * _.drop([4,5,6], 1) // [2,3]
+ * drop([4,5,6], 1) // [5,6]
  * 
- * _.drop([4,5,6], 2) // [3]
+ * drop([4,5,6], 2) // [6]
  * 
- * _.drop([4,5,6], 3) // []
+ * drop([4,5,6], 3) // []
  * ```
  */
 

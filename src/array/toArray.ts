@@ -3,9 +3,6 @@ import { option_checker } from "../general/optionChecker";
 import { withDefaults } from "../general/withDefaults";
 
 interface toArrayInterface {
-  /**
-   * Depth for array
-   */
   depth?: number;
   type?: JsTypes;
   falsey?: boolean;
@@ -19,6 +16,13 @@ type toArrayType = <T extends any, U extends TsTypes>(
 ) => any;
 
 /**
+ * @description turning values to optional array
+ *
+ * @example
+ * ```ts
+ * toArray([2], "test", [[30]], {type: "number",depth: 2})
+ * // [2, 30]
+ * ```
  *
  * @param arr any
  * @param options
@@ -31,15 +35,19 @@ export const toArray: toArrayType = (...arr) => {
   let option: toArrayInterface = option_checker(arr.flat(), [
     "depth",
     "falsey",
+    "types",
   ]);
 
   let flatted = arr
     .slice(0, arr.length - 1)
-    .flat(withDefaults(option?.depth, 1));
+    .flat(withDefaults(option?.depth, 1))
+    .filter((g) => {
+      if (!option?.type) return true;
+      return typeof g === option.type;
+    });
 
   if (!withDefaults(option?.falsey, true)) {
     return flatted.filter((a) => !!a);
   }
-
   return flatted;
 };

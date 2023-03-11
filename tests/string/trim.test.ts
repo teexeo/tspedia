@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { trim } from "../../src/string/trim";
+import { trim } from "../../src/string";
 
 describe("Trim", () => {
   it("should return null", () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { snakeCase } from "../../src/string/snakeCase";
+import { snakeCase } from "../../src/string";
 
 describe("Snake Case", function () {
   it("should work!", () => {

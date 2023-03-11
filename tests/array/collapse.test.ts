@@ -1,12 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { collapse } from "../../src/array/collapse";
+import { collapse } from "../../src/array";
 
 describe("Collapse", () => {
   it("should return empty array", () => {
     expect(collapse()()).toEqual([]);
   });
 
-  it("should return collapted array", () => {
+  it("should return collapsed array", () => {
     let collapsed = collapse("Hello", 2, [[["world"]]]);
 
     // Null
