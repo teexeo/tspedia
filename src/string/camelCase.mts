@@ -1,6 +1,5 @@
-import { StringWithFalsey } from "../types.mjs";
+import { TypeChecker } from "../general/typeChecker.x.mjs";
 import { capitalize } from "./capitalize.mjs";
-import { CheckType } from "./helpers.mjs";
 
 /**
  * @name camelCase
@@ -17,14 +16,28 @@ import { CheckType } from "./helpers.mjs";
  * ```
  */
 
-export function camelCase(text: StringWithFalsey, defaultValue?: any) {
+export function camelCase(text: string, defaultValue?: any) {
   // Parameter type checks
-  text = CheckType(text);
-
-  if (!text) return defaultValue ?? null;
+  let checked = TypeChecker(text, "string", defaultValue);
+  if (checked.type === "error") return checked.data;
 
   return text
     .split(" ")
     .map((T) => capitalize(T))
     .join("");
+}
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+
+  describe("CamelCase", () => {
+    it("should return null", () => {
+      expect(camelCase(null as any)).toBe(null);
+    });
+
+    it("should return default value", () => {
+      let value = "This is default";
+      expect(camelCase(null as any, value)).toBe(value);
+    });
+  });
 }
