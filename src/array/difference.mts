@@ -1,6 +1,5 @@
 /**
- * @description `difference two arrays`
- *
+ * @description difference two arrays
  * @example
  * ```ts
  * difference([3, 2, 1], [2, 3, 5]);

@@ -1,11 +1,13 @@
-
 /**
- * @description 'its checking is number integer'
+ * @description checking is value integer
  * 
- * @param val number 
+ * @example
+ * ```ts
+ * isInt()
+ * ```
  * 
  */
 
- export function isInt(val: number) {
-    return +val % 1 === 0;
+export function isInt(val: number) {
+  return +val % 1 === 0;
 }

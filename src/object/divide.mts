@@ -1,6 +1,8 @@
 /**
  * @description getting key and value property
  *
+ * @param obj object
+ *
  * @example
  * ```ts
  *   divide({
@@ -11,8 +13,6 @@
  * //    keys: [ 'name', 'age', 'jobs' ],
  * //    values: [ 'Suleyman', 20, [ 'Programming', 'Student' ]]
  * ```
- *
- * @param obj object
  */
 
 export function divide(obj: object) {

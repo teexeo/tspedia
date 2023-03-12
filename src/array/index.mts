@@ -12,3 +12,4 @@ export * from "./isArray.mjs";
 export * from "./last.mjs";
 export * from "./toArray.mjs";
 export * from "./reject.mjs";
+export * from "./intersection.mjs"

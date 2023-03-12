@@ -1,6 +1,5 @@
 /**
- * @description `difference just A array`
- *
+ * @description difference just first array
  * @example
  * ```ts
  * difference([2, 1], [2, 3]);

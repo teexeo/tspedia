@@ -1,5 +1,5 @@
 /**
- * @description 'accessible method determines if the given value is array accessible'
+ * @description determines if the given value is array accessible
  * @since v0.0.42
  *
  * ```ts
@@ -17,5 +17,4 @@ export function IsArray(arr: any): boolean {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  
 }

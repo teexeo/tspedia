@@ -3,15 +3,15 @@ import { capitalize } from "./capitalize.mjs";
 import { CheckType } from "./helpers.mjs";
 
 /**
- * @name camelCase
+ * @description turn string to CamelCase
+ *
  * @param text { string }
+ *
  * @example
  * ```js
  * const text = "layout menu";
- *
  * camelCase(text);
  * //=> "LayoutMenu"
- *
  * camelCase()
  * //=> null
  * ```

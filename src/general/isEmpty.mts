@@ -2,8 +2,9 @@ import { IsArray } from "../array/isArray.mjs";
 import { IsFalsey } from "./isFalsey.mjs";
 import { IsVoid } from "./isVoid.mjs";
 /**
- *
  * @description 'checking is value empty'
+ * @param data any
+ * @returns boolean
  *
  * @example
  * ```ts
@@ -12,9 +13,6 @@ import { IsVoid } from "./isVoid.mjs";
  * IsEmpty([[[{a: 33}]]])   //false
  * IsEmpty([5,"fsfs",77])   //false
  * ```
- *
- * @param data any
- * @returns boolean
  */
 
 export function IsEmpty(datas: any): boolean {

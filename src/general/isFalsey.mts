@@ -1,5 +1,7 @@
 /**
  * @description 'checking boolean type'
+ * @param data any type
+ * @returns boolean
  *
  * @example
  * ```ts
@@ -7,9 +9,6 @@
  * IsFalsey(false)   // false
  * IsFalsey(null)   // true
  * ```
- *
- * @param data any type
- * @returns boolean
  */
 
 export function IsFalsey(data: any): boolean {

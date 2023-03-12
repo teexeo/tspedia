@@ -1,7 +1,9 @@
-import { IsString } from "./is_string.mjs";
+import { IsString } from "./isString.mjs";
 import { IsFalsey } from "../general/isFalsey.mjs";
 /**
  * @description allows just a string;
+ * 
+ * @example
  * ```ts
  * const text = " Hi   Jeny ";
  * trim(text)

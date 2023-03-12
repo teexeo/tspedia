@@ -2,25 +2,22 @@ import { IsObject } from "./isObject.mjs";
 
 /**
  * @description Object checking with key
- *
- * ```ts
- * let obj = {name: 'John', age: 20};
- *
- * exists(obj, 'age');
- * // true
- *
- * exists(obj, 'cars')
- * // false
- *
- * exists(obj, ['name', 'age'], 'AND')
- * // true
- * ```
- *
  * @param obj object for check
  * @param find string key
  * @param condition "AND | OR" default is OR
  * @returns boolean
  * @since v0.0.43
+ *
+ * @example
+ * ```ts
+ * let obj = {name: 'John', age: 20};
+ * exists(obj, 'age');
+ * // true
+ * exists(obj, 'cars')
+ * // false
+ * exists(obj, ['name', 'age'], 'AND')
+ * // true
+ * ```
  */
 
 export function exists<T extends string | string[]>(

@@ -1,18 +1,18 @@
 import { IsArray } from "../array/isArray.mjs";
 
 /**
- * @description Check the object.
- * 
- * ```ts
- * IsObject({});
- * // true
- * 
- * IsObject([])
- * // false
- * ```
+ * @description check is value object
  * @param obj any
  * @returns boolean
  * @since v0.0.43
+ *
+ * @example
+ * ```ts
+ * IsObject({});
+ * // true
+ * IsObject([])
+ * // false
+ * ```
  */
 
 export function IsObject(obj: any): boolean {

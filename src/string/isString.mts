@@ -1,5 +1,7 @@
 /**
  * @description Checking data type is string.
+ * 
+ * @example
  * ```ts
  * IsString("hi") // true
  * IsString(2)    // false

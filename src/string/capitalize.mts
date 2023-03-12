@@ -1,9 +1,11 @@
 import { StringWithFalsey } from "../types.mjs";
-import { CheckType } from "./helpers.mjs";
 
 /**
+ * @description Capitalize the sring
  *
- * @param text allows single string;
+ * @param text allows single string
+ *
+ * @example
  * ```ts
  * capitalize("hello")
  * //=> Hello
@@ -16,8 +18,6 @@ export function capitalize(
   text: StringWithFalsey,
   defaultValue?: any
 ): string | null {
-  text = CheckType(text);
-
   if (!text) return defaultValue ?? null;
 
   return text[0].toUpperCase() + text.slice(1);

@@ -1,5 +1,7 @@
 /**
  * @description Text truncating
+ * 
+ * @example
  * ```ts
  * truncate('Hello world', 5);
  * // "Hello..."

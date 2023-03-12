@@ -1,8 +1,3 @@
-/**
- *
- * @description type list
- */
-
 export const Types = [
   "number",
   "string",

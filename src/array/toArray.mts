@@ -1,5 +1,5 @@
-import { JsTypes, TsTypes } from "../general/types.mjs";
-import { option_checker } from "../general/optionChecker.mjs";
+import { JsTypes, TsTypes } from "../general/types.x.mjs";
+import { option_checker } from "../general/optionChecker.x.mjs";
 import { withDefaults } from "../general/withDefaults.mjs";
 
 interface toArrayInterface {
@@ -17,6 +17,10 @@ type toArrayType = <T extends any, U extends TsTypes>(
 
 /**
  * @description turning values to optional array
+ * @param arr any
+ * @param options
+ * @returns array
+ * @since v0.0.43
  *
  * @example
  * ```ts
@@ -24,11 +28,6 @@ type toArrayType = <T extends any, U extends TsTypes>(
  * // [2, 30]
  * ```
  *
- * @param arr any
- * @param options
- * @returns array
- *
- * @since v0.0.43
  */
 
 export const toArray: toArrayType = (...arr) => {

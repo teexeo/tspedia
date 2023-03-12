@@ -6,7 +6,6 @@
  * intersection(["he", "lo"], ["he", "at", 22, 88])
  * // ['he']
  * ```
- *
  */
 
 export function intersection(A: any[], B: any[]): any[] {

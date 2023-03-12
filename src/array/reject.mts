@@ -1,6 +1,6 @@
 import { IsFunction } from "../general/isFunction.mjs";
 import { IsObject } from "../object/isObject.mjs";
-import { IsString } from "../string/is_string.mjs";
+import { IsString } from "../string/isString.mjs";
 import { IsArray } from "./isArray.mjs";
 
 type FindType<T> =
