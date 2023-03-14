@@ -2,15 +2,15 @@ import { TypeChecker } from "../general/typeChecker.x.mjs";
 import { capitalize } from "./capitalize.mjs";
 
 /**
- * @name camelCase
+ * @description turn string to CamelCase
+ *
  * @param text { string }
+ *
  * @example
  * ```js
  * const text = "layout menu";
- *
  * camelCase(text);
  * //=> "LayoutMenu"
- *
  * camelCase()
  * //=> null
  * ```
@@ -29,15 +29,21 @@ export function camelCase(text: string, defaultValue?: any) {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-
-  describe("CamelCase", () => {
+  describe("Camel case", function () {
     it("should return null", () => {
-      expect(camelCase(null as any)).toBe(null);
+      expect(camelCase(null)).toBe(null);
     });
 
-    it("should return default value", () => {
-      let value = "This is default";
-      expect(camelCase(null as any, value)).toBe(value);
+    it("should camel case work", () => {
+      expect(camelCase("layout menu index")).toBe("LayoutMenuIndex");
+    });
+
+    it("type check. should return null", () => {
+      expect(camelCase(true as any)).toBeNull();
+    });
+
+    it("one letter test", () => {
+      expect(camelCase("s . ")).toBe("S.");
     });
   });
 }

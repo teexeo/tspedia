@@ -1,7 +1,9 @@
 import { IsFunction } from "./isFunction.mjs";
 
 /**
- * @description Checking boolean type.
+ * @description check is value return smth
+ * @param data any type
+ * @returns boolean
  *
  * @example
  * ```ts
@@ -9,17 +11,17 @@ import { IsFunction } from "./isFunction.mjs";
  * IsVoid(() => "")   // false
  * IsVoid(() => {})   // true
  * ```
- *
- * @param data any type
- * @returns boolean
  */
 
-
-export function IsVoid(data: any): boolean | null {
+export function IsVoid(data: Function): boolean | null {
   if (!IsFunction(data)) return null;
 
   if (data() === undefined) {
     return true;
   }
   return false;
+}
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
 }

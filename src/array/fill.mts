@@ -1,7 +1,5 @@
-
 /**
- * @description 'change the entries of array to fill value'
- * 
+ * @description change the entries of array to fill value
  * @example
  * ```ts
  * const arr = [1,3,5]
@@ -9,10 +7,19 @@
  * ```
  */
 
+export function fill(
+  arr: any[],
+  value: any,
+  start: number = 0,
+  end: number = arr.length
+) {
+  for (let i = start; i < end; i++) {
+    arr[i] = value;
+  }
+  return arr;
+}
 
- export function fill(arr: any[], value: any, start: number = 0, end: number = arr.length) {
-    for (let  i = start; i < end; i++) {
-        arr[i] = value;
-    }
-    return arr;
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
 }

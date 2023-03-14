@@ -4,4 +4,5 @@ export * from "./snakeCase.mjs";
 export * from "./trim.mjs";
 export * from "./camelCase.mjs";
 export * from "./truncate.mjs";
-export * from "./is_string.mjs";
+export * from "./isString.mjs";
+export * from "./splitCamelCase.mjs";

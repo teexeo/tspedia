@@ -1,16 +1,13 @@
 import { isInt } from "../number/isInt.mjs";
 import { IsArray } from "@array";
 /**
- * @description 'dividing an array into parts'
- *
+ * @description dividing an array into parts
+ * @since v0.0.20
  * @example
  * ```ts
  * const arr = [1,2,3,4,5]
- *
  * chunk(arr, 2) // [[1,2],[3,4],[5]]
- *
  * ```
- * @since v0.0.20
  */
 
 export function chunk<T>(arr: T[], num: number): T[][] | null {

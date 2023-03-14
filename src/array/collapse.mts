@@ -1,12 +1,14 @@
-import { JsTypes } from "../general/types.mjs";
+import { JsTypes } from "../general/types.x.mjs";
 
 export interface ICollapseOptions {
   truthy: boolean;
 }
 
 /**
- * @description 'showing array with various deep levels'
- *
+ * @description showing array with various deep levels
+ * @since v0.0.42
+ * @param array any array
+ * @returns array
  * @example
  * ```ts
  * // Without type
@@ -21,9 +23,6 @@ export interface ICollapseOptions {
  * collapse([[2]], "Hello", false, [3])("number", false)
  * // => [[[2]], [3]]
  * ```
- * @since v0.0.42
- * @param array any array
- * @returns array
  */
 
 export function collapse(...datas: any[]) {
