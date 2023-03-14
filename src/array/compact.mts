@@ -10,3 +10,8 @@
 export function compact(arr: any[]): any[] {
   return arr.filter((e) => !!e !== false);
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
+}

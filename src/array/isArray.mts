@@ -17,4 +17,15 @@ export function IsArray(arr: any): boolean {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
+  describe("IsArray", () => {
+    it("should return false", () => {
+      expect(IsArray(0 as any)).toBe(false);
+      expect(IsArray("" as any)).toBe(false);
+      expect(IsArray((() => {}) as any)).toBe(false);
+    });
+
+    it("should return true", () => {
+      expect(IsArray([])).toBe(true);
+    });
+  });
 }

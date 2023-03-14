@@ -22,3 +22,7 @@ export function divide(obj: object) {
     values: Object.values(obj),
   };
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+}

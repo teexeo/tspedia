@@ -15,3 +15,8 @@ export function splitter (text: string | number, split: number | string = ''): s
         return typeof text === "number" ? +e : e;
     });
 }
+
+if (import.meta.vitest) {
+    const { describe, it, expect } = import.meta.vitest;
+    
+  }

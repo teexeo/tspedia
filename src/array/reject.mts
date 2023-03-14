@@ -55,3 +55,8 @@ export function reject<T>(arr: T[], find: FindType<T>): T[] {
   }
   return [];
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
+}

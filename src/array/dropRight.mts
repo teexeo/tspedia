@@ -12,3 +12,8 @@
 export function dropRight<T extends unknown>(arr: T[], num: number) {
   return arr.splice(0, num);
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
+}

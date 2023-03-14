@@ -50,3 +50,15 @@ export const toArray: toArrayType = (...arr) => {
   }
   return flatted;
 };
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  describe("To Array", () => {
+    it("should return empty array", () => {
+      expect(toArray([])).toEqual([]);
+    });
+    it.todo("should know options", () => {
+      expect(toArray("a", "b", false));
+    });
+  });
+}

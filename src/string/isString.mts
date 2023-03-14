@@ -13,3 +13,8 @@
 export function IsString(text: any) {
   return typeof text === "string";
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
+}

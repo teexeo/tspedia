@@ -21,3 +21,7 @@ export function IsVoid(data: Function): boolean | null {
   }
   return false;
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+}

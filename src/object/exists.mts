@@ -39,3 +39,7 @@ export function exists<T extends string | string[]>(
   }
   return false;
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+}

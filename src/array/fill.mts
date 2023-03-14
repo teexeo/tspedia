@@ -18,3 +18,8 @@ export function fill(
   }
   return arr;
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
+}

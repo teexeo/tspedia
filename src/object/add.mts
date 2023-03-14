@@ -28,3 +28,7 @@ export function add(obj: object = {}, key: keyType, value: any) {
   (obj as any)[key] = value;
   return obj;
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+}

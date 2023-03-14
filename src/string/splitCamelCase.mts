@@ -15,3 +15,8 @@ export function splitCamelCase(text: string) {
   const wordRegex = /[A-Z]?[a-z]+|[0-9]+|[A-Z]+(?![a-z])/g;
   return text.match(wordRegex);
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
+}

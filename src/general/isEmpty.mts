@@ -36,3 +36,7 @@ export function IsEmpty(datas: any): boolean {
     IsFalsey(datas) || datas.length === 0 || Object.keys(datas).length === 0
   );
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+}

@@ -14,3 +14,7 @@
 export function IsFalsey(data: any): boolean {
   return typeof data !== "boolean" && !data;
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+}

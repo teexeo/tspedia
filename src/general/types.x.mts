@@ -7,7 +7,6 @@ export const Types = [
 ] as const;
 
 export type JsTypes = typeof Types[number];
-//nm un Types[number]???
 
 export type TsTypes =
   | string

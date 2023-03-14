@@ -13,3 +13,8 @@
 export function drop<T extends unknown>(arr: T[], num: number) {
   return arr.splice(num);
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
+}

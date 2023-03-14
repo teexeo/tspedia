@@ -12,3 +12,8 @@ export function difference(A: any[], B: any[]): any[] {
     B.filter((x) => !A.includes(x))
   );
 }
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  
+}
