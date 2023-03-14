@@ -27,11 +27,12 @@ export function camelCase(text: string, defaultValue?: any) {
     .join("");
 }
 
+
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
   describe("Camel case", function () {
     it("should return null", () => {
-      expect(camelCase(null)).toBe(null);
+      expect(camelCase(null as any)).toBe(null);
     });
 
     it("should camel case work", () => {

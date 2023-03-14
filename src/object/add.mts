@@ -1,3 +1,5 @@
+import { IsArray } from "../array/isArray.mjs";
+
 type keyType = string | number | object;
 
 /**
@@ -17,18 +19,28 @@ type keyType = string | number | object;
  */
 
 export function add(obj: object = {}, key: keyType, value: any) {
-  if (typeof obj !== "object" || Array.isArray(obj)) return false;
+  if (IsArray(obj)) return {};
+
   if (typeof key === "object") {
     return {
       ...obj,
       ...key,
     };
   }
-
   (obj as any)[key] = value;
   return obj;
 }
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
+
+  describe("Add", () => {
+    it("should give the null", () => {
+      expect(add(undefined, undefined as any, undefined)).toEqual({});
+    });
+
+    it("should add new object", () => {
+      expect(add({}, "age", 20)).toEqual({ age: 20 });
+    });
+  });
 }
