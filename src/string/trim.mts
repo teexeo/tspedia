@@ -1,15 +1,14 @@
 import { IsString } from "./isString.mjs";
 import { IsFalsey } from "../general/isFalsey.mjs";
 /**
- * @description allows just a string;
- *
+ * @description allows just a string
+ * @since v0.0.12
  * @example
  * ```ts
  * const text = " Hi   Jeny ";
  * trim(text)
  * // "Hi Jeny"
  * ```
- * @since v0.0.12
  */
 
 export function trim(text: string): string | null {

@@ -5,7 +5,6 @@ import { IsArray } from "../array/isArray.mjs";
  * @param obj any
  * @returns boolean
  * @since v0.0.43
- *
  * @example
  * ```ts
  * IsObject({});

@@ -21,5 +21,15 @@ export function fill(
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  
+  describe("Fill", () => {
+    it("should return changed values", () => {
+      expect(fill(["one", 24, NaN, false], "smth")).toEqual([
+        "smth",
+        "smth",
+        "smth",
+        "smth",
+      ]);
+      expect(fill([4, "clean"], "code", 0, 1)).toEqual(["code", "clean"]);
+    });
+  });
 }

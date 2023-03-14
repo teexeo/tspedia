@@ -1,15 +1,14 @@
 /**
  * @description Text truncating
- *
+ * @param text string
+ * @param length number
+ * @returns string...
+ * @since v0.0.43
  * @example
  * ```ts
  * truncate('Hello world', 5);
  * // "Hello..."
  * ```
- * @param text string
- * @param length number
- * @returns string...
- * @since v0.0.43
  */
 
 export function truncate(text: string, length: number) {

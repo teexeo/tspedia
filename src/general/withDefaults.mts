@@ -5,7 +5,6 @@ import { IsFalsey } from "./isFalsey.mjs";
  * @param data any type
  * @param defaultValue any type
  * @returns data or default value
- *
  * @example
  * ```ts
  * let car = { name: "Bugatti" };
@@ -17,4 +16,13 @@ import { IsFalsey } from "./isFalsey.mjs";
  */
 export function withDefaults<T>(data: T, defaultValue: any | T): T {
   return IsFalsey(data) ? defaultValue : data;
+}
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  describe("DifferenceA", () => {
+    it("should return different value", () => {
+      expect();
+    });
+  });
 }

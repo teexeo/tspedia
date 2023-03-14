@@ -1,13 +1,12 @@
 /**
  * @description split CamelCase that only accept string type
- *
+ * @since v0.0.42
  * @example
  * ```ts
  * splitCamelCase(camelCase("Hello world")) // ["Hello", "World"]
  * splitCamelCase("SomeTest") // ["Some", "Test"]
  * splitCamelCase(944) // false
  * ```
- * @since v0.0.42
  */
 
 export function splitCamelCase(text: string) {
@@ -18,5 +17,4 @@ export function splitCamelCase(text: string) {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  
 }

@@ -2,10 +2,9 @@ import { IsArray } from "../array/isArray.mjs";
 import { IsFalsey } from "./isFalsey.mjs";
 import { IsVoid } from "./isVoid.mjs";
 /**
- * @description 'checking is value empty'
+ * @description checking is value empty
  * @param data any
  * @returns boolean
- *
  * @example
  * ```ts
  * IsEmpty(false)   //true
@@ -39,4 +38,9 @@ export function IsEmpty(datas: any): boolean {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
+  describe("DifferenceA", () => {
+    it("should return different value", () => {
+      expect();
+    });
+  });
 }

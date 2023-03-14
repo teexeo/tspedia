@@ -1,8 +1,6 @@
 /**
  * @description getting key and value property
- *
  * @param obj object
- *
  * @example
  * ```ts
  *   divide({

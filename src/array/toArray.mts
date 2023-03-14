@@ -21,13 +21,11 @@ type toArrayType = <T extends any, U extends TsTypes>(
  * @param options
  * @returns array
  * @since v0.0.43
- *
  * @example
  * ```ts
  * toArray([2], "test", [[30]], {type: "number",depth: 2})
  * // [2, 30]
  * ```
- *
  */
 
 export const toArray: toArrayType = (...arr) => {

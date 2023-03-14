@@ -13,5 +13,12 @@ export function compact(arr: any[]): any[] {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  
+  describe("Compact", () => {
+    it("should return truthy values", () => {
+      expect(compact([5, "53", "", false])).toEqual([5, "53"]);
+    });
+    it("should return empty array", () => {
+      expect(compact([false, NaN])).toEqual([]);
+    });
+  });
 }

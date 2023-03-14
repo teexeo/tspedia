@@ -3,15 +3,11 @@ import { IsArray } from "./isArray.mjs";
 
 /**
  * @description joining and stringifying an array
- *
- * @param arr e.g ["a", "b"]
- * @param separator e.g "-"
- * @returns "a-b"
  * @since v0.0.43
- *
  * @example
  * ```ts
- *
+ * join([2,5,7], '-') // 2-5-7
+ * join([2,5,'7']) // 257
  * ```
  */
 

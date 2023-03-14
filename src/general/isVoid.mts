@@ -4,7 +4,6 @@ import { IsFunction } from "./isFunction.mjs";
  * @description check is value return smth
  * @param data any type
  * @returns boolean
- *
  * @example
  * ```ts
  * IsVoid(() => 43434)   // false
@@ -24,4 +23,9 @@ export function IsVoid(data: Function): boolean | null {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
+  describe("DifferenceA", () => {
+    it("should return different value", () => {
+      expect();
+    });
+  });
 }

@@ -1,5 +1,5 @@
 import { IsFalsey } from "./isFalsey.mjs";
-import { JsTypes } from "./types.mjs";
+import { JsTypes } from "./types.x.mjs";
 
 export function TypeChecker(
   data: any,

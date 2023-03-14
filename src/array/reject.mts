@@ -12,28 +12,21 @@ type FindType<T> =
 let checks = [IsFunction, IsString, IsArray, IsObject];
 
 /**
- * @description 'negated or reversed filter'
- *
+ * @description negated filter
  * @example
  * ```ts
  * let users = [
  * { 'user': 'ted', 'age': 31, 'married': false },
- * { 'user': 'jack', 'age': 21, 'married': true }
- * ];
- *
+ * { 'user': 'jack', 'age': 21, 'married': true }];
  * reject(users, { 'age': 40, 'active': true });
  * // [{ 'user': 'ted', 'age': 31, 'married': false }]
- *
  * reject(users, 'active');
  * // [{ 'user': 'ted', 'age': 31, 'married': false }]
- *
  * reject(users, function(o) { return !o.married; });
  * // [{ 'user': 'jack', 'age': 21, 'married': true }]
- *
  * reject(users, ['active', false]);
  * // [{ 'user': 'jack', 'age': 21, 'married': true }]
  * ```
- *
  */
 
 export function reject<T>(arr: T[], find: FindType<T>): T[] {
@@ -58,5 +51,9 @@ export function reject<T>(arr: T[], find: FindType<T>): T[] {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  
+  describe("Reject", () => {
+    it("should return rejected values", () => {
+      expect(reject());
+    });
+  });
 }
