@@ -1,5 +1,5 @@
 import { isInt } from "../number/isInt.mjs";
-import { IsArray } from "./isArray.mjs";
+import { IsArray } from "@array";
 /**
  * @description dividing an array into parts
  * @since v0.0.20
