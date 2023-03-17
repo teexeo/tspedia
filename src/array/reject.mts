@@ -18,13 +18,13 @@ let checks = [IsFunction, IsString, IsArray, IsObject];
  * let users = [
  * { 'user': 'ted', 'age': 31, 'married': false },
  * { 'user': 'jack', 'age': 21, 'married': true }];
- * reject(users, { 'age': 40, 'active': true });
+ * reject(users, { 'age': 40, 'married': true });
  * // [{ 'user': 'ted', 'age': 31, 'married': false }]
- * reject(users, 'active');
+ * reject(users, 'married');
  * // [{ 'user': 'ted', 'age': 31, 'married': false }]
  * reject(users, function(o) { return !o.married; });
  * // [{ 'user': 'jack', 'age': 21, 'married': true }]
- * reject(users, ['active', false]);
+ * reject(users, ['married', false]);
  * // [{ 'user': 'jack', 'age': 21, 'married': true }]
  * ```
  */
@@ -52,8 +52,23 @@ export function reject<T>(arr: T[], find: FindType<T>): T[] {
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
   describe("Reject", () => {
-    it("should return rejected values", () => {
-      expect(reject());
+    const users = [
+      { user: "ted", age: 31, married: false },
+      { user: "jack", age: 21, married: true },
+      { user: "joe", age: 26, married: true },
+    ];
+    it("should return reversed filter", () => {
+      expect(reject(users, ["married", true])).toEqual([
+        { user: "ted", age: 31, married: false },
+      ]);
+      expect(
+        reject(users, function (o) {
+          return !o.married;
+        })
+      ).toEqual([
+        { user: "jack", age: 21, married: true },
+        { user: "joe", age: 26, married: true },
+      ]);
     });
   });
 }

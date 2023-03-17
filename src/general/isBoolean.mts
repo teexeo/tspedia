@@ -16,9 +16,12 @@ export function IsBoolean(data: any) {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  describe("DifferenceA", () => {
-    it("should return different value", () => {
-      expect();
+  describe("IsBoolean", () => {
+    it("should return true", () => {
+      expect(IsBoolean(false)).toBe(true);
+    });
+    it("should return false", () => {
+      expect(IsBoolean("boolean")).toBe(false);
     });
   });
 }

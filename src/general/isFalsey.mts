@@ -16,9 +16,12 @@ export function IsFalsey(data: any): boolean {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  describe("DifferenceA", () => {
-    it("should return different value", () => {
-      expect();
+  describe("IsFalsey", () => {
+    it("should return true", () => {
+      expect(IsFalsey(NaN)).toBe(true);
+    });
+    it("should return false", () => {
+      expect(IsFalsey("undefined")).toBe(false);
     });
   });
 }

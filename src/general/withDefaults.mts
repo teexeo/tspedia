@@ -7,11 +7,11 @@ import { IsFalsey } from "./isFalsey.mjs";
  * @returns data or default value
  * @example
  * ```ts
- * let car = { name: "Bugatti" };
- * withDefaults(car.name, "Audi")
- * // "Bugatti";
- * withDefaults(car?.price, "Audi")
- * // "Audi";
+ * let car = { name: "BMW", price: "" };
+ * withDefaults(car.name, "Audi");
+ * // "BMW";
+ * withDefaults(car?.price, "60,000$");
+ * // "60,000$";
  * ```
  */
 export function withDefaults<T>(data: T, defaultValue: any | T): T {
@@ -20,9 +20,11 @@ export function withDefaults<T>(data: T, defaultValue: any | T): T {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  describe("DifferenceA", () => {
-    it("should return different value", () => {
-      expect();
+  describe("WithDefaults", () => {
+    const person = [{ name: "max", status: "active" }, { status: "active" }];
+    it("should return default value", () => {
+      expect(withDefaults(person[0].name, "someone")).toBe("max");
+      expect(withDefaults(person[1].name, "someone")).toBe("someone");
     });
   });
 }
