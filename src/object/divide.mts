@@ -1,5 +1,13 @@
+import { IsFalsey } from "../general/isFalsey.mjs";
+import { IsArray } from "../array/isArray.mjs";
+
+type DivideReturnType = {
+  keys: string[];
+  values: any[];
+} | null;
+
 /**
- * @description getting key and value property
+ * @description Object keys and values dividing
  * @param obj object
  * @example
  * ```ts
@@ -13,8 +21,8 @@
  * ```
  */
 
-export function divide(obj: object) {
-  if (typeof obj !== "object" || Array.isArray(obj)) return false;
+export function divide(obj: object): DivideReturnType {
+  if (IsFalsey(obj) || IsArray(obj)) return null;
   return {
     keys: Object.keys(obj),
     values: Object.values(obj),
@@ -23,4 +31,23 @@ export function divide(obj: object) {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
+  describe("Divide", () => {
+    it("should return null", () => {
+      expect(divide(null as any)).toBe(null);
+      expect(divide([] as any)).toBe(null);
+    });
+
+    it("should divide object", () => {
+      expect(
+        divide({
+          name: "John",
+          age: 20,
+        })
+      ).toEqual({
+        keys: ["name", "age"],
+        values: ["John", 20],
+      });
+    });
+  });
 }
+
