@@ -7,7 +7,6 @@ import { IsObject } from "./isObject.mjs";
  * @param condition "AND | OR" default is OR
  * @returns boolean
  * @since v0.0.43
- *
  * @example
  * ```ts
  * let obj = {name: 'John', age: 20};

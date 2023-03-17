@@ -1,10 +1,7 @@
-import { IsFunction } from "./isFunction.mjs";
-
 /**
  * @description check is value return smth
  * @param data any type
  * @returns boolean
- *
  * @example
  * ```ts
  * IsVoid(() => 43434)   // false
@@ -13,9 +10,7 @@ import { IsFunction } from "./isFunction.mjs";
  * ```
  */
 
-export function IsVoid(data: Function): boolean | null {
-  if (!IsFunction(data)) return null;
-
+export function IsVoid(data: Function): boolean {
   if (data() === undefined) {
     return true;
   }
@@ -24,4 +19,12 @@ export function IsVoid(data: Function): boolean | null {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
+  describe("IsVoid", () => {
+    it("should return true", () => {
+      expect(IsVoid(() => {})).toBe(true);
+    });
+    it("should return false", () => {
+      expect(IsVoid(() => "")).toBe(false);
+    });
+  });
 }

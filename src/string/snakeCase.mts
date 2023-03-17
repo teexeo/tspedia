@@ -1,4 +1,4 @@
-import { CheckType } from "./helpers.mjs";
+import { TypeChecker } from "../general/typeChecker.x.mjs";
 import { StringWithFalsey } from "../types.mjs";
 
 /**

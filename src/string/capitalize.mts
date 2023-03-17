@@ -2,9 +2,7 @@ import { StringWithFalsey } from "../types.mjs";
 
 /**
  * @description Capitalize the sring
- *
  * @param text allows single string
- *
  * @example
  * ```ts
  * capitalize("hello")

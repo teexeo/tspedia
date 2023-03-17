@@ -16,7 +16,6 @@ type resultType = { [x: string]: any };
  * @param pairs array type
  * @returns object
  * @since v0.0.43
- *
  * @example
  * ```ts
  * toPairs([['name', 'John'], ['age', 20]]);

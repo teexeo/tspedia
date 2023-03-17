@@ -2,10 +2,9 @@ import { IsArray } from "../array/isArray.mjs";
 import { IsFalsey } from "./isFalsey.mjs";
 import { IsVoid } from "./isVoid.mjs";
 /**
- * @description 'checking is value empty'
+ * @description checking is value empty
  * @param data any
  * @returns boolean
- *
  * @example
  * ```ts
  * IsEmpty(false)   //true
@@ -15,28 +14,30 @@ import { IsVoid } from "./isVoid.mjs";
  * ```
  */
 
-export function IsEmpty(datas: any): boolean {
-  if (IsArray(datas)) {
-    return datas.flat(10).length <= 0;
+export function IsEmpty(data: any): boolean {
+  if (IsArray(data)) {
+    return data.flat(10).length <= 0;
   }
 
-  if (!IsVoid(datas)) {
+  if (!IsVoid(data)) {
     return false;
   }
 
-  if (datas === 0) {
-    return true;
-  }
-
-  if (typeof datas === "number") {
+  if (typeof data === "number") {
     return false;
   }
 
-  return (
-    IsFalsey(datas) || datas.length === 0 || Object.keys(datas).length === 0
-  );
+  return IsFalsey(data) || data.length === 0 || Object.keys(data).length === 0;
 }
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
+  describe("IsEmpty", () => {
+    it("should return true", () => {
+      expect(IsEmpty([])).toBe(true);
+    });
+    it("should return false", () => {
+      expect(IsEmpty([[[{}]]])).toBe(false);
+    });
+  });
 }

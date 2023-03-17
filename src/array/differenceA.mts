@@ -13,5 +13,10 @@ export function differenceA(A: any[], B: any[]): any[] {
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
-  
+  describe("DifferenceA", () => {
+    it("should return different value", () => {
+      expect(differenceA([6, 9], [9, 1])).toEqual([6]);
+      expect(differenceA([6, 9, 2], [9, 1, 4, 5])).toEqual([6, 2]);
+    });
+  });
 }

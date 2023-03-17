@@ -8,9 +8,7 @@ type DivideReturnType = {
 
 /**
  * @description Object keys and values dividing
- *
  * @param obj object
- *
  * @example
  * ```ts
  *   divide({
@@ -52,3 +50,4 @@ if (import.meta.vitest) {
     });
   });
 }
+
